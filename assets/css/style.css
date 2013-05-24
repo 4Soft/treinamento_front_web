@@ -1,9 +1,11 @@
-// Cinza: #2a2a2a;
-// Cinza Escuro: #1a1a1a;
-// Verde: #55bb58;
+/* Cinza: #2a2a2a;
+ Cinza Escuro: #1a1a1a;
+ Verde: #55bb58;
+*/
 
 html {
 	height: 100%;
+	font-size: 16px;
 }
 
 body {
@@ -42,7 +44,7 @@ a {
 	color: #55bb58;
 }
 
-// HEADER STYLES
+/*/ HEADER STYLES*/
 
 .header {
 	height: 3em;
@@ -101,14 +103,47 @@ a {
 	}
 
 	.header__account li {
-		display: inline;
+		list-style: none;
 		font-size: 0.83em;
 		text-align: right;
 		float: right;
 		margin-left: 1em;
 	}
 
-	.header__artists-connected {
+ /*WRAPPER*/
+
+.wrapper {
+	background: url(../img/faux-column.jpg) repeat-y;
+	width: 100%;
+	min-width: 960px;
+	margin: auto;
+}
+
+ /*SIDEBAR STYLES*/
+
+.sidebar {
+	width: 12em;
+	float: left;
+	background: #2a2a2a;
+	height: 100%;
+	padding: 0 1em;
+	color: #fff;
+}
+
+	.sidebar__profile-info {
+		color: #999999;
+		font-size: 0.75em;
+		margin: 1em 0;
+	}
+
+	.profile-picture {
+		width: 12em;
+		height: 12em;
+		margin: 0 -1em;
+		background: yellow;
+	}
+
+	.sidebar__artists-connected {
 		margin-top: 1em;
 	}
 
@@ -135,37 +170,7 @@ a {
 	}
 
 
-.wrapper {
-	background: url(../img/faux-column.jpg) repeat-y;
-	width: 100%;
-	min-width: 960px;
-	margin: auto;
-}
-
-// SIDEBAR STYLES
-
-.sidebar {
-	width: 12em;
-	float: left;
-	background: #2a2a2a;
-	height: 100%;
-	padding: 0 1em;
-	box-sizing: border-box;
-	color: #fff;
-}
-
-	.sidebar__profile-info {
-		color: #999999;
-		font-size: 0.75em;
-		margin: 1em 0;
-	}
-
-	.profile-picture {
-		width: 12em;
-		height: 12em;
-		margin: 0 -1em;
-		background: yellow;
-	}
+/*ABOUT*/
 
 .about {
 	background: #1a1a1a;
@@ -180,6 +185,8 @@ a {
 		font-weight: 100;
 		color: #cccccc;
 	}
+
+/*Albums*/
 
 .albums {
 	padding: 1em;
@@ -205,10 +212,7 @@ a {
 	margin-right: 1em;
 }
 
-.clear {
-	clear: both;
-}
-// Modules
+ /*Modules*/
 
 .btn {
 	background: #bbb;
@@ -228,4 +232,8 @@ a {
 .box {
 	background: #fff;
 	padding: 1em;
+}
+
+.clear {
+	clear: both;
 }
